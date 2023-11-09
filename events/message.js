@@ -13,7 +13,7 @@ module.exports = {
     if(message.mentions.has('1135973889198014616')){
       try{
         const completion = await openai.createChatCompletion({
-          model: "gpt-4",
+          model: "gpt-3.5-turbo",
           messages: [{ role: "user", content: message.content }],
         });
         console.log(completion);// remove me
